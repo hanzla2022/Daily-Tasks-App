@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(27, 22, 22);
+  color-scheme: dark;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 button,
+a,
+span,
+p,
+input,
+label {
+  color: rgb(230, 220, 220);
+  font-family: sans-serif;
+}
+
+/*************** STYLING UPPER SECTION **************/
+/* main container  */
+div.container {
+  padding: 30px 0;
+  /* border: 2px solid blue; */
+}
+/* content styling */
+div.content {
+  /* border: 2px solid yellow; */
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+div.content > h2 {
+  font-size: 2rem;
+  font-weight: 900;
+  padding: 0 0 20px;
+}
+
+/* TODO CONTENT EMPTY SECTION  */
+
+#todo_content {
+  background-color: rgb(43, 40, 40);
+  /* width: 100%; */
+  /* opacity: 0.6; */
+}
+
+/* ADD TASK BUTTON STYLING */
+.task_button > button {
+  /* display: block; */
+  background-color: rgb(12, 150, 196);
+  width: 100%;
+  padding: 8px 30px;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+}
+
+.task_button > button:hover {
+  background-color: rgb(44, 104, 124);
+}
+
+/* MODEL POPUP DESIGN */
+
+.modal_container {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  background: rgba(44, 40, 40, 0.6);
+  /* opacity: 0.8; */
+  visibility: hidden;
+}
+
+div.model_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  /* background: rgb(44, 31, 31); */
+}
+
+.modal_box {
+  background: rgb(78, 76, 76);
+  padding: 20px 15px;
+  width: 370px;
+  border-radius: 6px;
+  /* transition: all 0.5s ease-in; */
+  /* text-align: center; */
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 10px 7px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+::placeholder {
+  color: rgb(2, 203, 253);
+}
+label {
+  display: inline-block;
+  padding: 10px 0 6px;
+  font-weight: bold;
+}
+
+div.modal_box > h4 {
+  font-size: 1.2rem;
+  padding: 0 0 15px;
+  color: rgb(211, 233, 10);
+}
+
+div.action_buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+div.modal_box button {
+  padding: 10px 30px;
+  margin-top: 20px;
+  background: transparent;
+  outline: none;
+  border: none;
+  font-weight: bold;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+div.modal_box button:nth-of-type(2) {
+  background: darkblue;
+}
+div.modal_box button:nth-of-type(2):hover {
+  background: rgb(33, 33, 192);
+}
+
+div.modal_box button:nth-of-type(1):hover {
+  background: rgb(41, 31, 114);
+}
+
+/************************  TODO INSIDE CONTENT ************************/
+
+.todo_content {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 20px;
+  border-radius: 5px;
+  margin-bottom: 8px;
+  visibility: hidden;
+  background: rgb(100, 99, 94);
+}
+
+.todo_content > :nth-child(2) {
+  align-self: center;
+}
+
+/* #todo_content i {
+  font-size: 25px;
+}
+
+#todo_content i:hover {
+  color: darkorange;
+  cursor: pointer;
+} */
+
+/****************************  CLASSES USED DIRECTLY IN JS  ****************************/
+.showModel {
+  visibility: visible !important;
+}
+
+.innerContent {
+  /* background: darkblue; */
+}
+
+/* icons style */
+
+.iconStyle {
+  color: aqua;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.iconStyle:hover {
+  color: rgb(55, 139, 139);
+}
+
+/* for todo tittle */
+.title_text {
+  font-weight: 900;
+  font-size: 25px;
+  color: yellow;
+}

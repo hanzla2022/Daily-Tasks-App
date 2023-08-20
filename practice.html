@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EXTRAS</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      body {
+        background: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="myButton" onclick="addIcon()">Click Me</button>
+    <script>
+      function addIcon() {
+        btn = document.getElementById("myButton");
+        btn.innerHTML = '<i class = "fa fa-spinner fa-spin"></i>';
+
+        setTimeout(function () {
+          alert("Completed!");
+          btn.innerHTML = "Click Me";
+        }, 3000);
+      }
+    </script>
+  </body>
+</html>

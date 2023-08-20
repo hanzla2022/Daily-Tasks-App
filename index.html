@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- STYLE LINK -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- FONT AWSOME  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- js link -->
+    <script src="main.js" defer></script>
+    <title>TO DO APP</title>
+  </head>
+  <body>
+    <!-- TODO CONTAINER  -->
+    <div class="container">
+      <div class="content">
+        <h2>My Task</h2>
+        <div id="todo_content_container">
+          <!-- <div id="todo_content"></div> -->
+        </div>
+        <div class="task_button">
+          <button id="taks_add_btn" onclick="addTask()">New Task</button>
+        </div>
+      </div>
+    </div>
+    <!-------------------- MODEL POPUP -------------------->
+    <div class="modal_container" id="model_container">
+      <div class="model_content">
+        <div class="modal_box">
+          <h4>New TAsk</h4>
+          <label for="title">Title</label>
+          <input
+            type="text"
+            name="title"
+            id="title_input"
+            placeholder="Task title"
+            required
+          />
+          <label for="summary">Summary</label>
+          <input
+            type="text"
+            name="summary"
+            id="summary_input"
+            placeholder="Task Summary"
+            required
+          />
+          <div class="action_buttons">
+            <button id="cancel_btn" onclick="close_modal_popup()">
+              Cancel
+            </button>
+            <button id="submit_btn" onclick="submitTodo()">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
